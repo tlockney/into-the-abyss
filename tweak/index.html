@@ -3,6 +3,7 @@
 		<title>Tweakpane</title>
 	</head>
 	<body>
+		This page is here to provide a simple example of using <a href="https://cocopon.github.io/tweakpane/">Tweakpane</a>.
 		<script src="https://cdn.jsdelivr.net/npm/tweakpane@1.2.0/dist/tweakpane.min.js"></script>
 		<script>
 			
@@ -13,7 +14,7 @@
 			const pane = new Tweakpane();
 			pane.addInput(PARAMS, "speed");
 
-			const btn = pane.addButton({
+			const btn = pane.addButton({	
 				title: 'Output',
 			}).on('click', (value) => {
 				console.log(PARAMS.speed);
